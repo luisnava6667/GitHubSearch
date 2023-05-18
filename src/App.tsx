@@ -7,7 +7,7 @@ function App() {
   const { modeLight } = useContext(ThemeContext)
   return (
     <div
-      className={` h-screen w-screen ${
+      className={` lg:h-full xl:h-screen w-screen ${
         modeLight ? 'bg-slate-300' : 'bg-[#141D2F]'
       }
        `}>

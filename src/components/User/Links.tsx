@@ -24,7 +24,7 @@ export const Links = ({ links }: LinksPropos) => {
         <HiOutlineLink size={20} />
         {links.blog ? (
           <a href={links.blog} target='_blank'>
-            {links.blog.slice(8, 24) + '...'}
+            {links.blog.slice(8, 20) + '...'}
           </a>
         ) : (
           <p className='text-gray-600'>Not Available</p>
@@ -41,7 +41,7 @@ export const Links = ({ links }: LinksPropos) => {
       <div className='flex items-center gap-2'>
         <FaMapMarkerAlt size={15} />
         {links.location ? (
-          <p>{links.location}</p>
+          <p>{links.location.slice(0, 14) + '...'}</p>
         ) : (
           <p className='text-gray-600'>Not Available</p>
         )}
@@ -50,7 +50,7 @@ export const Links = ({ links }: LinksPropos) => {
         <BsTwitter size={15} />
         {links.twitter ? (
           <a href={links.twitter} target='_blank'>
-            {links.twitter}
+            {links.twitter.slice(0, 20) + '...'}
           </a>
         ) : (
           <p className='text-gray-600'>Not Available</p>

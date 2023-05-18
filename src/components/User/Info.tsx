@@ -21,7 +21,7 @@ export const Info: FC<InfoProps> = ({ username, bio, name, joinedAt, pfp }) => {
         <div className='w-full px-3'>
           <div className='grid sm:flex sm:justify-between'>
             <h2
-              className={`sm:text-6xl font-bold  ${
+              className={`xl:text-6xl md:text-4xl font-bold  ${
                 modeLight ? 'text-[#1E2A47]' : 'text-white'
               }`}>
               {name}

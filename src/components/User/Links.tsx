@@ -24,7 +24,7 @@ export const Links = ({ links }: LinksPropos) => {
         <HiOutlineLink size={20} />
         {links.blog ? (
           <a href={links.blog} target='_blank'>
-            {links.blog}
+            {links.blog.slice(8, 24) + '...'}
           </a>
         ) : (
           <p className='text-gray-600'>Not Available</p>
